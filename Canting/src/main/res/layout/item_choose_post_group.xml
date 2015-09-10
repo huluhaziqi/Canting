@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"  >
+
+    <View
+        android:id="@+id/item_choose_group_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3"
+        android:layout_marginTop="@dimen/dim_24px"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_below="@id/item_choose_group_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dim_30px"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/choose_post_icon"
+            android:tag="1"
+            android:layout_width="@dimen/dim_32px"
+            android:layout_height="@dimen/dim_32px"
+            android:src="@mipmap/icon_pwd_unselect"/>
+
+        <TextView
+            android:id="@+id/choose_post_name"
+            android:layout_marginLeft="@dimen/dim_20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/post"
+            android:textSize="@dimen/dim_28px_sp"
+            android:textColor="@color/gray4" />
+
+        <ImageView
+            android:id="@+id/choose_post_arrow"
+            android:layout_width="@dimen/dim_32px"
+            android:layout_height="@dimen/dim_32px"
+            android:src="@mipmap/icon_expand_down" />
+
+    </LinearLayout>
+
+</RelativeLayout>

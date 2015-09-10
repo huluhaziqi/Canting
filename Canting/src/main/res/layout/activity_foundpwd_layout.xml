@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <cn.caimatou.canting.widget.GLCustomScrollView
+        android:id="@+id/svView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:fillViewport="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_30px"
+                android:background="@color/white"
+                android:visibility="visible">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray3"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dim_30px"
+                        android:layout_marginStart="@dimen/dim_30px"
+                        android:paddingBottom="@dimen/dim_30px"
+                        android:paddingTop="@dimen/dim_30px"
+                        android:singleLine="true"
+                        android:text="@string/mobile_phone"
+                        android:textColor="@color/gray4"
+                        android:textColorHint="@color/gray1"
+                        android:textSize="@dimen/dim_28px_sp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dim_30px"
+                        android:layout_marginLeft="@dimen/dim_54px"
+                        android:layout_marginRight="@dimen/dim_30px"
+                        android:layout_marginStart="@dimen/dim_54px"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etMobilePhone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:digits="1234567890"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/regist_mobile_phone"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="phone|number"
+                            android:maxLength="11"
+                            android:paddingBottom="@dimen/dim_30px"
+                            android:paddingTop="@dimen/dim_30px"
+                            android:singleLine="true"
+                            android:textColor="@color/gray4"
+                            android:textColorHint="@color/gray1"
+                            android:textSize="@dimen/dim_28px_sp"
+                            android:textStyle="normal"/>
+
+                        <ImageView
+                            android:id="@+id/ivClearMobilePhone"
+                            android:layout_width="@dimen/dim_40px"
+                            android:layout_height="@dimen/dim_40px"
+                            android:layout_gravity="center_vertical"
+                            android:clickable="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/btn_clear_selector"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray3"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/etCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dim_30px"
+                        android:layout_marginStart="@dimen/dim_30px"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:digits="1234567890"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:hint="@string/enter_code"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone|number"
+                        android:maxLength="4"
+                        android:paddingBottom="@dimen/dim_30px"
+                        android:paddingTop="@dimen/dim_30px"
+                        android:singleLine="true"
+                        android:textColor="@color/gray4"
+                        android:textColorHint="@color/gray1"
+                        android:textSize="@dimen/dim_28px_sp"
+                        android:textStyle="normal"/>
+
+                    <Button
+                        android:id="@+id/btnSendCode"
+                        android:layout_width="115dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/dim_30px"
+                        android:layout_marginLeft="@dimen/dim_30px"
+                        android:layout_marginRight="@dimen/dim_30px"
+                        android:layout_marginStart="@dimen/dim_30px"
+                        android:background="@drawable/btn_gray_selector"
+                        android:gravity="center"
+                        android:text="@string/send_code"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/dim_28px_sp"/>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray3"/>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dim_30px"
+                android:layout_marginLeft="@dimen/dim_30px"
+                android:layout_marginRight="@dimen/dim_30px"
+                android:layout_marginStart="@dimen/dim_30px"
+                android:layout_marginTop="@dimen/dim_30px"
+                android:background="@drawable/btn_green_selector"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dim_28px"
+                android:paddingTop="@dimen/dim_28px"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim_32px_sp"/>
+        </LinearLayout>
+
+    </cn.caimatou.canting.widget.GLCustomScrollView>
+
+</LinearLayout>

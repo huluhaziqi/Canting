@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topMenuEditRestaurantInfo"
+    android:layout_width="match_parent"
+    android:layout_height="88px"
+    android:background="#F5F5F9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#39b44A"
+            android:padding="8dp"
+            android:src="@drawable/button_left_back" />
+
+        <TextView
+            android:id="@+id/tvEditRestaurantInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.87"
+            android:background="#39B44A"
+            android:gravity="center"
+            android:text="资质认证"
+            android:textColor="#FFFFFF"
+            android:textSize="42px" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="跳过"
+            android:textSize="22px"
+            android:textColor="#f2f2f2"
+            android:background="#39B44A"
+            android:layout_weight="0.16" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

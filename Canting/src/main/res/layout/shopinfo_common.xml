@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dim_24px" >
+
+    <ImageView
+        android:id="@+id/shopinfo_icn"
+        android:layout_width="@dimen/dim_30px"
+        android:layout_height="@dimen/dim_30px"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/address"/>
+
+    <TextView
+        android:id="@+id/shopinfo_text1"
+        android:layout_toRightOf="@id/shopinfo_icn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_30px"
+        android:layout_marginBottom="@dimen/dim_30px"
+        android:textSize="@dimen/dim_28px_sp"
+        android:textColor="@color/gray4"
+        android:layout_marginLeft="@dimen/dim_20px"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/shopinfo_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="@dimen/dim_28px_sp"
+        android:textColor="@color/gray4"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dim_30px"/>
+
+    <View
+        android:id="@+id/shop_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray3">
+    </View>
+
+</RelativeLayout>

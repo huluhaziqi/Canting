@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义tabar的属性 -->
+    <declare-styleable name="glCustomTabarMenu">
+        <attr name="tabarCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PasswordInputView">
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="borderRadius" format="dimension"/>
+        <attr name="passwordLength" format="integer"/>
+        <attr name="passwordWidth" format="dimension"/>
+        <attr name="passwordColor" format="color"/>
+        <attr name="passwordRadius" format="dimension"/>
+        <attr name="isPassword" format="boolean"/>
+    </declare-styleable>
+</resources>

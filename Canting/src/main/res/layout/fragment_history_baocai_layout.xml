@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/empty_data"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/dim_24px"/>
+    </LinearLayout>
+
+
+    <cn.caimatou.canting.widget.refresh.PullToRefreshLayout
+        android:id="@+id/prlRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head"/>
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <cn.caimatou.canting.widget.refresh.PullableExpandableListView
+            android:id="@+id/elvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dim_30px"
+            android:background="@color/gray2"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="#00ffffff"
+            android:scrollbars="none"/>
+
+        <include layout="@layout/load_more"/>
+
+    </cn.caimatou.canting.widget.refresh.PullToRefreshLayout>
+
+</LinearLayout>

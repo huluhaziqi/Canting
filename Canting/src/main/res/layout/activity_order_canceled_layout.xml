@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_white" android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginStart="@dimen/dim_30px"
+        android:layout_marginTop="@dimen/dim_54px"
+        android:text="@string/reason_for_cancellation"
+        android:textColor="@color/gray4"
+        android:textSize="@dimen/dim_28px_sp"/>
+
+    <LinearLayout
+        android:id="@+id/llInfoIsError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dim_15px"
+        android:paddingTop="@dimen/dim_24px">
+        <RadioButton
+            android:id="@+id/rbInfoIsErrorCheck"
+            android:layout_width="@dimen/dim_48px"
+            android:layout_height="@dimen/dim_48px"
+            android:layout_marginLeft="@dimen/dim_30px"
+            android:layout_marginStart="@dimen/dim_30px"
+            android:background="@null"
+            android:button="@drawable/gl_radio_small_bg_selector"/>
+
+        <TextView
+            android:id="@+id/tvInfoIsError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_5dp"
+            android:layout_marginStart="@dimen/dim_5dp"
+            android:text="@string/canceled_baocai_report_info_is_error"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/dim_28px_sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDonotWantHave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dim_15px"
+        android:paddingTop="@dimen/dim_15px">
+        <RadioButton
+            android:id="@+id/rbDonotWantHaveCheck"
+            android:layout_width="@dimen/dim_48px"
+            android:layout_height="@dimen/dim_48px"
+            android:layout_marginLeft="@dimen/dim_30px"
+            android:layout_marginStart="@dimen/dim_30px"
+            android:background="@null"
+            android:button="@drawable/gl_radio_small_bg_selector"/>
+
+        <TextView
+            android:id="@+id/tvDonotWantHave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_5dp"
+            android:layout_marginStart="@dimen/dim_5dp"
+            android:text="@string/canceled_donot_want_to_have"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/dim_28px_sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dim_15px"
+        android:paddingTop="@dimen/dim_15px">
+        <RadioButton
+            android:id="@+id/rbOther"
+            android:layout_width="@dimen/dim_48px"
+            android:layout_height="@dimen/dim_48px"
+            android:layout_marginLeft="@dimen/dim_30px"
+            android:layout_marginStart="@dimen/dim_30px"
+            android:background="@null"
+            android:button="@drawable/gl_radio_small_bg_selector"/>
+
+        <TextView
+            android:id="@+id/tvOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_5dp"
+            android:layout_marginStart="@dimen/dim_5dp"
+            android:text="@string/canceled_other"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/dim_28px_sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginRight="@dimen/dim_30px"
+        android:background="@drawable/shape_bg_white_stroke"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/canceled_other_note"
+        android:imeOptions="actionDone"
+        android:paddingBottom="@dimen/dim_30px"
+        android:paddingLeft="@dimen/dim_15px"
+        android:paddingRight="@dimen/dim_15px"
+        android:paddingTop="@dimen/dim_30px"
+        android:singleLine="true"
+        android:textColor="@color/gray4"
+        android:textColorHint="@color/gray1"
+        android:textSize="@dimen/dim_28px_sp"
+        android:textStyle="normal"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dim_54px"
+        android:background="@color/gray3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_80px"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_selector"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dim_28px_sp"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray3"/>
+
+        <TextView
+            android:id="@+id/tvConfirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_80px"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_selector"
+            android:gravity="center"
+            android:text="@string/confirm1"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dim_28px_sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

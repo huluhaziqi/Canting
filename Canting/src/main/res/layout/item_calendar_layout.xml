@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llCalendar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginStart="@dimen/dim_30px"
+        android:layout_marginTop="@dimen/dim_30px"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip">
+
+            <TableRow>
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/sunday"/>
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/monday"/>
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/thesday"/>
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/wednesday"/>
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/thursday"/>
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/friday"/>
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/saturday"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpCalendarPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

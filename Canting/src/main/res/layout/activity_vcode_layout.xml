@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/dim_30px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginRight="@dimen/dim_30px"
+        android:layout_marginStart="@dimen/dim_30px"
+        android:layout_marginTop="@dimen/dim_54px"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/vcode_is_send"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/dim_24px_sp"/>
+
+        <TextView
+            android:id="@+id/tvMobilePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="18667040224"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/dim_30px_sp"/>
+    </LinearLayout>
+
+    <cn.caimatou.canting.widget.GLVerifyCodeView
+        android:id="@+id/etVCodeView"
+        xmlns:custom="http://schemas.android.com/apk/res/cn.caimatou.canting"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/dim_54px"
+        android:layout_marginLeft="@dimen/dim_54px"
+        android:layout_marginRight="@dimen/dim_54px"
+        android:layout_marginStart="@dimen/dim_54px"
+        android:layout_marginTop="@dimen/dim_30px"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="0dp"
+        custom:borderColor="@color/gray1"
+        custom:borderRadius="@dimen/custom_ev_border_radius"
+        custom:borderWidth="@dimen/custom_ev_border_width"
+        custom:isPassword="false"
+        custom:passwordColor="@color/gray4"
+        custom:passwordLength="4"
+        custom:passwordWidth="@dimen/custom_ev_password_width"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/dim_30px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginRight="@dimen/dim_30px"
+        android:layout_marginStart="@dimen/dim_30px"
+        android:layout_marginTop="@dimen/dim_54px"
+        android:background="@drawable/btn_green_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dim_28px"
+        android:paddingTop="@dimen/dim_28px"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_32px_sp"/>
+
+    <TextView
+        android:id="@+id/tvResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dim_54px"
+        android:paddingTop="@dimen/dim_54px"
+        android:text="@string/resend_code"
+        android:textColor="@drawable/btn_blue_selector"
+        android:textSize="@dimen/dim_24px_sp"/>
+
+</LinearLayout>

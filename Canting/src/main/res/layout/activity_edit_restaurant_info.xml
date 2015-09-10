@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top_menu_edit_restaurant_info"></include>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="24px"
+        android:background="#FFFFFF"
+        android:padding="30px"
+        android:stretchColumns="2">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvNameOfRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="餐厅名称"
+                android:textColor="#333333"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tvShowNameOfRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:layout_span="2"
+                android:gravity="center_vertical" />
+
+            <ImageButton
+                android:id="@+id/ibNameOfRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:background="#FFFFFF"
+                android:src="@drawable/button_right" />
+
+        </TableRow>
+
+        <TableRow android:paddingTop="30px">
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="地址"
+                android:textColor="#333333"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tvShowAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:layout_span="2"
+                android:gravity="center_vertical" />
+
+            <ImageButton
+                android:id="@+id/ibAddress"
+                android:layout_column="3"
+                android:background="#FFFFFF"
+                android:src="@drawable/button_right" />
+        </TableRow>
+
+        <TableRow android:paddingTop="30px">
+
+            <TextView
+                android:id="@+id/tvDetailedAddress"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="详细地址"
+                android:textColor="#333333"
+                android:textSize="30px"></TextView>
+
+            <TextView
+                android:id="@+id/tvShowDetailedAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:layout_span="2"
+                android:gravity="center_vertical" />
+
+            <ImageButton
+                android:id="@+id/ibDetailedAddress"
+                android:layout_column="3"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF"
+                android:src="@drawable/button_right" />
+        </TableRow>
+
+        <TableRow android:padding="36px"></TableRow>
+
+        <TableRow android:paddingTop="12px">
+
+            <TextView
+                android:id="@+id/tvContacts"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="联系人"
+                android:textColor="#333333"
+                android:textSize="30px"></TextView>
+
+            <TextView
+                android:id="@+id/tvShowContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:layout_span="2"
+                android:gravity="center_vertical" />
+
+            <ImageButton
+                android:id="@+id/ibContacts"
+                android:layout_column="3"
+                android:background="#FFFFFF"
+                android:src="@drawable/button_right" />
+
+        </TableRow>
+
+        <TableRow android:paddingTop="30px">
+
+            <TextView
+                android:id="@+id/tvContactsMobile"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="联系手机"
+                android:textColor="#333333"
+                android:textSize="30px"></TextView>
+
+
+            <TextView
+                android:id="@+id/tvShowContactsMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:layout_span="2"
+                android:gravity="center_vertical" />
+
+            <ImageButton
+                android:id="@+id/ibContactsMobile"
+                android:layout_column="3"
+                android:background="#FFFFFF"
+                android:src="@drawable/button_right" />
+        </TableRow>
+
+        <TableRow android:paddingTop="30px">
+
+            <TextView
+                android:id="@+id/tvPost"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="岗位"
+                android:textColor="#333333"
+                android:textSize="30px"></TextView>
+
+            <TextView
+                android:id="@+id/tvShowPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:layout_span="2"
+                android:gravity="center_vertical" />
+
+            <ImageButton
+                android:id="@+id/ibPost"
+                android:layout_column="3"
+                android:background="#FFFFFF"
+                android:src="@drawable/button_right" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <include
+                android:id="@+id/next"
+                layout="@layout/next_submit_qualification_certificate"></include>
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

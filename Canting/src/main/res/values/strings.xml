@@ -1,0 +1,349 @@
+<resources>
+    <string name="app_name">菜码头</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="release_to_load">释放立即加载</string>
+
+    <string name="loading">正在加载...</string>
+    <string name="searching">正在搜索中...</string>
+    <string name="canceling">正在撤消中...</string>
+    <string name="logouting">正在注销中...</string>
+    <string name="start_login">正在登录中...</string>
+    <string name="gl_loading_now">正在玩命加载中...</string>
+    <string name="start_delete">正在删除中...</string>
+
+    <string name="two_day_before">两天前</string>
+    <string name="before_yesterday">前天</string>
+    <string name="yesterday">昨天</string>
+    <string name="today">今天</string>
+    <string name="tomorrow">明天</string>
+    <string name="after_tomorrow">后天</string>
+    <string name="two_day_after">两天后</string>
+
+    <string name="sunday">日</string>
+    <string name="monday">一</string>
+    <string name="thesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+
+    <string name="dialog_title_tips">温馨提示</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="gl_listVege">报菜</string>
+    <string name="gl_historyListVege">历史报菜单</string>
+    <string name="gl_provider">供应商</string>
+    <string name="gl_mine">我的</string>
+
+    <string name="gl_service_error">服务器异常</string>
+    <string name="gl_no_network_conn">无网络连接</string>
+    <string name="set_network">无网络连接，是否设置网络？</string>
+
+    <!-- 登录注册部分 -->
+    <string name="activity_login">账户登录</string>
+    <string name="mobile_phone">手机号</string>
+    <string name="login_password">登录密码</string>
+    <string name="login">登录</string>
+    <string name="forgot_login_password">忘记登录密码？</string>
+    <string name="noAccountFreeSettled">还没有账号，免费入驻</string>
+    <string name="exit_login">退出登录</string>
+
+    <string name="enter_account">请输入账户名称</string>
+    <string name="account_isnotSpace">账号不能为空格</string>
+    <string name="enter_login_password">请输入登录密码</string>
+    <string name="password_isnotSpace">密码不能为空格</string>
+    <string name="password_wrong">密码错误</string>
+    <string name="login_error">账户名或登录密码不匹配，请重新输入</string>
+
+    <string name="enter_mobile_phone">请填写手机号码</string>
+    <string name="mobile_phone_is_error">手机号格式有误，请重新输入</string>
+
+    <string name="found_password">找回密码</string>
+    <string name="regist_mobile_phone">注册时的手机号</string>
+    <string name="enter_code">请输入短信验证码</string>
+    <string name="send_code">获取验证码</string>
+    <string name="resend">重新获取</string>
+    <string name="send_code_success">验证码已发送至手机，请注意查收短信</string>
+    <string name="vcode_length_error">请输入%s位短信验证码</string>
+    <string name="vcode_iserror">验证码不正确，请重新输入！</string>
+    <string name="vcode_success">验证成功！</string>
+    <string name="next">下一步</string>
+    <string name="send_vcode_error">验证码发送失败！</string>
+
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="passwrod_length">6-16位字符</string>
+    <string name="show_password">显示密码</string>
+    <string name="save">保存</string>
+    <string name="enter_new_password">请输入新密码</string>
+    <string name="enter_confirm_password">请确认密码</string>
+    <string name="enter_confirm_password_again">两次密码不一致，请重新确认密码</string>
+    <string name="reset_password_success">密码重置成功，请重新登录</string>
+    <string name="password_length_error">密码为6-16位字符</string>
+
+    <string name="set_password">设置密码</string>
+    <string name="password">密码</string>
+    <string name="enter_password_again">再次输入密码</string>
+    <string name="next_cantingInfo">下一步，填写餐厅信息</string>
+
+    <string name="free_settled">免费入驻</string>
+    <string name="mobile_phone_number">手机号码</string>
+    <string name="common_mobile_phone">常用手机号码</string>
+    <string name="click_next_agree">点击上面按钮“下一步”，即表示您同意</string>
+    <string name="services_agreement">《服务协议》</string>
+
+    <string name="vcode_is_send">验证码已发送到手机：</string>
+    <string name="resend_code">重新获取验证码</string>
+    <string name="vcode_error">验证码不匹配，请重新输入</string>
+
+    <string name="edit_canting_info">填写餐厅信息</string>
+    <string name="canting_name">餐厅名称</string>
+    <string name="address">地址</string>
+    <string name="detail_address">详细地址</string>
+    <string name="contact">联系人</string>
+    <string name="contact_mobile_phone">联系手机</string>
+    <string name="quarters">岗位</string>
+    <string name="completer">完成</string>
+    <string name="address_city">省、市、区</string>
+    <string name="enter_canting_name">请输入餐厅名称</string>
+    <string name="enter_canting_city">请输入餐厅地址</string>
+    <string name="enter_detail_address">请输入详情地址</string>
+    <string name="enter_contact">请输入联系人</string>
+    <string name="enter_contact_phone">请输入联系电话</string>
+    <string name="enter_quarters">请输入岗位</string>
+    <string name="set_default_success">设为默认地址成功</string>
+    <string name="address_del_success">删除地址成功</string>
+
+    <!-- 登录注册部分END -->
+
+    <!-- 报菜部分 -->
+    <string name="baocai_empty">暂无报菜供应商</string>
+    <string name="add_provider">立即添加</string>
+    <string name="today_baocai">今日报菜单</string>
+    <string name="kinds">主营：%s</string>
+    <string name="provider_name">供应商名称</string>
+    <string name="baocai_report">报菜单</string>
+    <string name="provider_detail">供应商详情</string>
+    <string name="call_phone_text">拨打供应商电话：%s？</string>
+    <string name="call">拨打</string>
+    <string name="add_vege_count">已添加&lt;font color="#ff9900">%1$s&lt;/font>个菜</string>
+    <string name="clear_all">全部清空</string>
+    <string name="add_caipin">添加菜品</string>
+    <string name="edit_caipin">编辑菜品</string>
+    <string name="is_clear_all">确定要清空菜品？</string>
+    <string name="is_sure_delete">确定要删除？</string>
+    <string name="delivery_time">送达时间</string>
+    <string name="today_am">今日上午</string>
+    <string name="today_pm">今日下午</string>
+    <string name="next_day_am">次日上午</string>
+    <string name="next_day_pm">次日下午</string>
+    <string name="immediately_served">立即送达</string>
+    <string name="delivery_address">配送地址</string>
+    <string name="note">备注</string>
+    <string name="single">下单</string>
+    <string name="has_add_caipin">已添加菜品</string>
+    <string name="cai_name">菜名</string>
+    <string name="cai_count">数量</string>
+    <string name="cai_unit">单位</string>
+    <string name="add_note">添加备注</string>
+    <string name="enter_unit">输入单位</string>
+    <string name="other">其他</string>
+    <string name="continue_to_add">继续添加</string>
+    <string name="cleared_all_caipin">已清空全部菜品</string>
+    <string name="delete_success">删除成功</string>
+    <string name="enter_cai_name">请输入菜名</string>
+    <string name="cai_name_is_error">菜名不能有特殊字符</string>
+    <string name="enter_cai_count">请输入数量</string>
+    <string name="cai_count_is_error">数量必须大于0</string>
+    <string name="select_unit">请选择菜品单位</string>
+    <string name="enter_other_unit">请输入菜品单位</string>
+    <string name="selected_delivery_time">请选择配送时间</string>
+    <string name="selected_delivery_address">请选择配送地址</string>
+    <string name="default_address">[默认]</string>
+    <string name="manager_address">管理地址</string>
+    <string name="add_address">新增地址</string>
+    <string name="edit_address">编辑地址</string>
+    <string name="city_and_area">市、区</string>
+    <string name="street">街道</string>
+    <string name="set_default">设为默认</string>
+    <string name="selected_city_and_district">请选择省市区</string>
+    <string name="selected_street">请选择街道</string>
+
+    <!-- 报菜部分END -->
+
+    <!-- 报菜单部分 -->
+    <string name="empty_data">暂无数据</string>
+    <string name="total_cai">共%s个菜</string>
+    <string name="pending">待处理</string>
+    <string name="is_completed">已完成</string>
+    <string name="search_hint">请输入供应商名称</string>
+    <string name="cooperation_supplier">合作供应商</string>
+
+    <string name="order_cancel">撤消</string>
+    <string name="order_reminders_about">催一下</string>
+    <string name="order_confirm_receipt">确认收货</string>
+    <string name="order_delete_baocaireport">删除报菜单</string>
+
+    <string name="state_baocai">已报菜</string>
+    <string name="it_has_orders">已接单</string>
+    <string name="state_has_been_delivered">已送达</string>
+    <string name="state_have_receipt">已收货</string>
+    <string name="state_application_withdrawn">已申请撤消</string>
+    <string name="is_canceled">已取消</string>
+
+    <string name="reason_for_cancellation">撤消原因：</string>
+    <string name="order_provider_name">供应商：%s</string>
+    <string name="order_number">订单号：%s</string>
+    <string name="order_caipin_name">菜品名称</string>
+    <string name="order_count_and_unit">数量(单位)</string>
+    <string name="order_total_count">合计：&lt;font color="#ff9900">%1$s&lt;/font>种</string>
+    <string name="order_canting_name">餐厅名：</string>
+    <string name="order_main_dish">报菜员：</string>
+    <string name="order_canting_tel">餐厅电话：</string>
+    <string name="order_shipping_address">配送地址：</string>
+
+    <string name="canceled_baocai_report_info_is_error">报菜单信息有误</string>
+    <string name="canceled_donot_want_to_have">不想要了</string>
+    <string name="canceled_other">其他</string>
+    <string name="canceled_other_note">请输入撤消原因</string>
+
+    <!-- 报菜单部分 END -->
+
+    <!-- 供应商列表部分 -->
+    <string name="my_provider">我的供应商</string>
+    <string name="provider_empty">暂无供应商</string>
+    <string name="restaurantName">餐厅名称</string>
+    <string name="shopList">供应商列表</string>
+    <string name="district">地区</string>
+    <string name="classify">分类</string>
+    <string name="reorder">排序</string>
+    <string name="phone">电话</string>
+    <string name="requestVege_ime">立即报菜</string>
+    <string name="add_to_myProvider">添加到我的供应商</string>
+    <string name="shop_information">菜商详情</string>
+    <string name="no_data">暂时没有找到合适的信息</string>
+    <string name="vegeWharf_identify">菜码头认证菜商</string>
+    <string name="shop_intro">店铺简介</string>
+    <string name="shop_send_district">配送范围</string>
+    <string name="shop_identify">资质证照</string>
+    <string name="shop_view">店铺实景</string>
+    <string name="not_provide">暂不供货</string>
+    <string name="re_provide">恢复供货</string>
+    <!-- 供应商列表部分END -->
+
+    <!-- Mine界面部分 -->
+    <string name="user_center">个人中心</string>
+    <string name="edit_userinfo">修改个人资料</string>
+    <string name="edit_password">修改密码</string>
+    <string name="edit_phone">更换绑定手机</string>
+    <string name="user_avater">头像</string>
+    <string name="user_info">个人资料</string>
+    <string name="user_password">登录密码</string>
+    <string name="user_phone">已绑手机</string>
+    <string name="user_name">姓名</string>
+    <string name="user_phone_number">手机号</string>
+    <string name="user_sex">性别</string>
+    <string name="user_birthday">生日</string>
+    <string name="user_info_save">保存</string>
+    <string name="current_pwd">当前密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="confirm_pwd">确认密码</string>
+    <string name="show_pwd">显示密码</string>
+    <string name="confirm_commit">确认提交</string>
+    <string name="phone_old">原手机号</string>
+    <string name="phone_code">验证码</string>
+    <string name="enter_phone_code">请输入验证码</string>
+    <string name="get_vcode">获取验证码</string>
+    <string name="edit_phone_info">要更换绑定手机号，需先通过原绑定电话验证</string>
+    <string name="change_phone_next">下一步，验证新手机</string>
+    <string name="password_changing">密码修改中...</string>
+    <string name="userinfo_updating">信息更新中...</string>
+    <string name="should_before_now">生日必须早于当前日期</string>
+    <string name="choose_sex">请选择性别</string>
+    <string name="enter_user_nickname">请输入姓名</string>
+    <string name="enter_user_sex">请选择性别</string>
+    <string name="enter_user_birthday">请选择生日</string>
+    <string name="user_nickname">用户昵称</string>
+    <string name="boy">男</string>
+    <string name="girl">女</string>
+    <string name="update_info_failure">sorry，更新信息失败</string>
+    <string name="linkman">联系人</string>
+    <string name="linkman_tel">联系人电话</string>
+    <string name="temporary_not_dredge">暂未开通</string>
+    <string name="temporary_not_dredge_hope">暂未开通，敬请期待</string>
+
+    <!-- 员工管理部分 -->
+    <string name="staff_manager">员工权限管理</string>
+    <string name="staff_accout_manager">员工帐号管理</string>
+    <string name="staff_post_manager">岗位管理</string>
+    <string name="manager">管理员</string>
+    <string name="staff_add">添加员工</string>
+    <string name="staff_not_active">未激活</string>
+    <string name="must_edit">必填</string>
+    <string name="can_edit">选填</string>
+    <string name="staff_address">住址</string>
+    <string name="staff_phone">手机</string>
+    <string name="staff_done">完成</string>
+    <string name="tel_list">手机通讯录</string>
+    <string name="telephone">电话:</string>
+    <string name="add">添加</string>
+    <string name="added">已添加</string>
+    <string name="staff_post_purchase">采购员</string>
+    <string name="post">岗位</string>
+    <string name="staff_info">员工信息</string>
+    <string name="delete">删除</string>
+    <string name="view_report">查看报表</string>
+    <string name="choose_post">选择岗位</string>
+    <string name="confirm1">确认</string>
+    <string name="post_add">添加岗位</string>
+    <string name="edit">编辑</string>
+    <string name="input_post_name">输入岗位名称</string>
+    <string name="baocai_open_info">开启后，员工可以报菜以及查看报菜单</string>
+    <string name="view_report_open_info">开启后，员工可以查看下单的报表数据</string>
+    <!-- 员工管理部分END -->
+
+    <!-- 餐厅信息部分 -->
+    <string name="canting_logo">餐厅LOGO</string>
+    <string name="canting_name1">餐厅名</string>
+    <string name="brief">简介</string>
+    <string name="gender">性别</string>
+    <string name="contact_person">联系人</string>
+    <string name="contact_phone">联系电话</string>
+    <!-- 餐厅信息部分END -->
+
+    <!-- 设置部分 -->
+    <string name="setting">设置</string>
+    <string name="message_notice">消息提醒</string>
+    <string name="check_update">检查更新</string>
+    <string name="about_us">关于我们</string>
+    <!-- 设置部分END -->
+
+    <!-- 今日采购 && 本月采购部分 -->
+    <string name="today_buy">今日采购</string>
+    <string name="done_status">已接单</string>
+    <string name="doing_status">待处理</string>
+    <string name="cancel_status">已取消</string>
+    <!-- 今日采购 && 本月采购部分END -->
+
+    <!-- 资质认证部分 -->
+    <string name="aptitude_identify">资质认证</string>
+    <string name="canting_basic_info">餐厅基本信息</string>
+    <string name="verify_not_passed">未审核通过</string>
+    <string name="verify_passed">审核通过</string>
+    <string name="aptitude_certificate">资质证书</string>
+    <string name="not_upload">未上传</string>
+    <string name="uploaded">已上传</string>
+    <string name="pass">跳过</string>
+    <string name="business_license">营业执照</string>
+    <string name="submit_identify">提交认证</string>
+
+</resources>

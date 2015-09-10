@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/topQualityCertification"
+        layout="@layout/top_quality_certification"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="24px"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30px"
+            android:paddingBottom="40px"
+            >
+
+            <TextView
+                android:id="@+id/tvBusinessLicense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="营业执照"
+                android:textSize="30px" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:text="选择" />
+        </LinearLayout>
+        <include
+            android:id="@+id/submitCertification"
+            layout="@layout/submit_certification"></include>
+    </LinearLayout>
+
+
+</LinearLayout>

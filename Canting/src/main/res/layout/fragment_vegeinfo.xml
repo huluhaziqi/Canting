@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/requestVege_immediately"
+        android:layout_width="match_parent"
+        android:layout_height="36.5dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/dim_20px"
+        android:layout_marginBottom="@dimen/dim_20px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginRight="@dimen/dim_30px"
+        android:background="@drawable/btn_orange_selector"
+        android:gravity="center"
+        android:textSize="@dimen/dim_32px_sp"
+        android:text="@string/requestVege_ime"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_above="@id/requestVege_immediately"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <ListView
+        android:id="@+id/shopinfo_listview"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:layout_above="@id/line">
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/staff_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:paddingTop="@dimen/dim_30px"
+    android:paddingBottom="@dimen/dim_30px" >
+
+    <ImageView
+        android:id="@+id/staff_avater"
+        android:layout_width="@dimen/dim_40px"
+        android:layout_height="@dimen/dim_40px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:src="@mipmap/icon_login_account" />
+    
+    <TextView
+        android:id="@+id/staff_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_16px"
+        android:textSize="@dimen/dim_30px_sp"
+        android:textColor="@color/gray4"
+        android:text="@string/user_name"/>
+
+    <TextView
+        android:id="@+id/staff_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dim_10px"
+        android:paddingRight="@dimen/dim_10px"
+        android:paddingTop="@dimen/dim_5px"
+        android:paddingBottom="@dimen/dim_5px"
+        android:layout_marginLeft="@dimen/dim_16px"
+        android:textSize="@dimen/dim_22px_sp"
+        android:background="@drawable/btn_green_selector"
+        android:text="@string/staff_post_manager"/>
+
+    <TextView
+        android:id="@+id/staff_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:layout_marginRight="@dimen/dim_24px"
+        android:textColor="@color/gray1"
+        android:text="@string/staff_not_active"/>
+
+</LinearLayout>

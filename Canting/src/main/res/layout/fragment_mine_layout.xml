@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F9"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFCF2"
+            android:paddingBottom="@dimen/dim_15px"
+            android:paddingLeft="@dimen/dim_30px"
+
+            android:paddingRight="@dimen/dim_30px"
+            android:paddingTop="@dimen/dim_15px">
+
+            <ImageView
+                android:id="@+id/ivNotice"
+                android:layout_width="@dimen/dim_24px"
+                android:layout_height="@dimen/dim_24px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/notice" />
+
+            <TextView
+                android:id="@+id/tvNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivNotice"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="您的餐厅还未认证，请及时上传相关资质"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_24px_sp" />
+
+            <TextView
+                android:id="@+id/tvCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#FFFCF2"
+                android:text="查看"
+                android:textColor="#288DF0"
+                android:textSize="@dimen/dim_24px_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/restaurantInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:padding="@dimen/dim_30px">
+
+            <ImageView
+                android:id="@+id/ivHeadPortrait"
+                android:layout_width="@dimen/dim_80px"
+                android:layout_height="@dimen/dim_80px"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/headportrait" />
+
+            <TextView
+                android:id="@+id/tvInfoOfName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/ivHeadPortrait"
+                android:layout_toRightOf="@+id/ivHeadPortrait"
+                android:paddingLeft="@dimen/dim_24px"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_30px_sp" />
+
+            <TextView
+                android:id="@+id/tvInfoOfMobileNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ivHeadPortrait"
+                android:layout_toEndOf="@+id/ivHeadPortrait"
+                android:layout_toRightOf="@+id/ivHeadPortrait"
+                android:paddingLeft="@dimen/dim_24px"
+                android:paddingTop="@dimen/dim_24px"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_24px_sp" />
+
+            <ImageButton
+                android:id="@+id/btInfoOfRestaurant"
+                android:layout_width="@dimen/dim_16px"
+                android:layout_height="@dimen/dim_16px"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                android:src="@mipmap/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/infoOfRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_30px">
+
+            <TextView
+                android:id="@+id/tvNameOfRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="XXX餐厅名称"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <TextView
+                android:id="@+id/tvNumOfRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvNameOfRestaurant"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="(编号)"
+                android:textColor="#999999"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <ImageButton
+                android:id="@+id/ibNext"
+                android:layout_width="@dimen/dim_16px"
+                android:layout_height="@dimen/dim_16px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                android:src="@mipmap/next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E5E5E5"></View>
+
+        <RelativeLayout
+            android:id="@+id/purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_24px">
+
+            <ImageView
+                android:id="@+id/ivPurchase"
+                android:layout_width="@dimen/dim_32px"
+                android:layout_height="@dimen/dim_32px"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/purchase" />
+
+            <TextView
+                android:id="@+id/tvPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivPurchase"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="采购指数"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E5E5E5"></View>
+
+        <RelativeLayout
+            android:id="@+id/month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_24px">
+
+            <ImageView
+                android:id="@+id/ivMonth"
+                android:layout_width="@dimen/dim_24px"
+                android:layout_height="@dimen/dim_24px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/month" />
+
+            <TextView
+                android:id="@+id/tvMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivMonth"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="本月采购"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <TextView
+                android:id="@+id/tvMerchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="家菜商）"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <TextView
+                android:id="@+id/tvNumOfMerchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tvMerchant"
+                android:text="5"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_30px_sp" />
+
+            <TextView
+                android:id="@+id/tvUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tvNumOfMerchant"
+                android:text="单（"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <TextView
+                android:id="@+id/tvNumOfMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tvUnit"
+                android:text="5"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_30px_sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_1px"
+            android:background="#E5E5E5"></View>
+
+        <RelativeLayout
+            android:id="@+id/day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_24px">
+
+            <ImageView
+                android:id="@+id/ivDay"
+                android:layout_width="@dimen/dim_24px"
+                android:layout_height="@dimen/dim_24px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/day" />
+
+            <TextView
+                android:id="@+id/tvDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivDay"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="今日采购"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <TextView
+                android:id="@+id/tvMerchantDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="家菜商）"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <TextView
+                android:id="@+id/tvNumOfMerchantDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tvMerchantDay"
+                android:text="5"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_30px_sp" />
+
+            <TextView
+                android:id="@+id/tvUnitDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tvNumOfMerchantDay"
+                android:text="单（"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <TextView
+                android:id="@+id/tvNumOfDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tvUnitDay"
+                android:text="5"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_30px_sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E5E5E5"></View>
+
+        <RelativeLayout
+            android:id="@+id/numInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_24px">
+
+            <TextView
+                android:id="@+id/tvAcceptedNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/dim_80px"
+                android:paddingRight="@dimen/dim_80px"
+                android:text="10"
+                android:textColor="#288DF0"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <TextView
+                android:id="@+id/tvAccepted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNotNum"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/dim_80px"
+                android:paddingRight="@dimen/dim_80px"
+                android:paddingTop="@dimen/dim_10px"
+                android:text="已接单"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_24px_sp" />
+
+
+            <TextView
+                android:id="@+id/tvNotNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/tvAcceptedNum"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="#288DF0"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <TextView
+                android:id="@+id/tvNotAccepted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvNotNum"
+                android:layout_toLeftOf="@id/tvAccepted"
+                android:gravity="center"
+                android:paddingTop="@dimen/dim_10px"
+                android:text="未接单"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_24px_sp" />
+
+            <TextView
+                android:id="@+id/tvBackNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tvAcceptedNum"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#288DF0"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvBackNum"
+                android:layout_toRightOf="@id/tvAccepted"
+                android:gravity="center"
+                android:paddingTop="@dimen/dim_10px"
+                android:text="退单"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_24px_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMyProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_30px"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_30px">
+
+            <ImageView
+                android:id="@+id/ivProvider"
+                android:layout_width="@dimen/dim_32px"
+                android:layout_height="@dimen/dim_32px"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/provider" />
+
+            <TextView
+                android:id="@+id/tvMyProvider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivProvider"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="我的供应商"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <ImageButton
+                android:id="@+id/ibProvider"
+                android:layout_width="@dimen/dim_16px"
+                android:layout_height="@dimen/dim_16px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                android:src="@mipmap/next" />
+
+            <TextView
+                android:id="@+id/tvMyProviderNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ibProvider"
+                android:paddingRight="@dimen/dim_10px"
+                android:text="55家"
+                android:textColor="#999999"
+                android:textSize="@dimen/dim_28px_sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E5E5E5"></View>
+
+        <RelativeLayout
+            android:id="@+id/relCertification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_30px">
+
+            <ImageView
+                android:id="@+id/ivCertification"
+                android:layout_width="@dimen/dim_32px"
+                android:layout_height="@dimen/dim_32px"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/certification" />
+
+            <TextView
+                android:id="@+id/tvResCertification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivCertification"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="餐厅认证"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <ImageButton
+                android:id="@+id/ibResCertification"
+                android:layout_width="@dimen/dim_16px"
+                android:layout_height="@dimen/dim_16px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                android:src="@mipmap/next" />
+
+            <TextView
+                android:id="@+id/tvResCertificationInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ibResCertification"
+                android:paddingRight="@dimen/dim_10px"
+                android:text="未认证"
+                android:textColor="#FF9900"
+                android:textSize="@dimen/dim_28px_sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E5E5E5"></View>
+
+        <RelativeLayout
+            android:id="@+id/rlAuthorityManagement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_30px">
+
+            <ImageView
+                android:id="@+id/ivAuthorityManagement"
+                android:layout_width="@dimen/dim_32px"
+                android:layout_height="@dimen/dim_32px"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/authority_management" />
+
+            <TextView
+                android:id="@+id/tvAuthorityManagement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivAuthorityManagement"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="员工权限管理"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <ImageButton
+                android:id="@+id/ibAuthorityManagement"
+                android:layout_width="@dimen/dim_16px"
+                android:layout_height="@dimen/dim_16px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                android:src="@mipmap/next" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ibAuthorityManagement"
+                android:text="@string/temporary_not_dredge"
+                android:paddingRight="@dimen/dim_10px"
+                android:textColor="@color/gray1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_30px"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_30px">
+
+            <ImageView
+                android:id="@+id/ivHelping"
+                android:layout_width="@dimen/dim_32px"
+                android:layout_height="@dimen/dim_32px"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/helping" />
+
+            <TextView
+                android:id="@+id/tvHelping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivHelping"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="帮助"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <ImageButton
+                android:id="@+id/ibHelping"
+                android:layout_width="@dimen/dim_16px"
+                android:layout_height="@dimen/dim_16px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                android:src="@mipmap/next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E5E5E5"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_30px"
+            android:id="@+id/rlSharing"
+            >
+
+            <ImageView
+                android:id="@+id/ivSharing"
+                android:layout_width="@dimen/dim_32px"
+                android:layout_height="@dimen/dim_32px"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/sharing" />
+
+            <TextView
+                android:id="@+id/tvSharing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivSharing"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="分享"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <ImageButton
+                android:id="@+id/ibSharing"
+                android:layout_width="@dimen/dim_16px"
+                android:layout_height="@dimen/dim_16px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                android:src="@mipmap/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settingRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_30px"
+            android:background="#FFFFFF"
+            android:padding="@dimen/dim_30px">
+
+            <ImageView
+                android:id="@+id/ivSetting"
+                android:layout_width="@dimen/dim_32px"
+                android:layout_height="@dimen/dim_32px"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/setting" />
+
+            <TextView
+                android:id="@+id/tvSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivSetting"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="设置"
+                android:textColor="#666666"
+                android:textSize="@dimen/dim_28px_sp" />
+
+            <ImageButton
+                android:id="@+id/ibSetting"
+                android:layout_width="@dimen/dim_16px"
+                android:layout_height="@dimen/dim_16px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                android:src="@mipmap/next" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/baocai_empty"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/dim_28px_sp"/>
+
+        <TextView
+            android:id="@+id/tvAddProvider"
+            android:layout_width="202dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/gl_stroke_corner_green_line"
+            android:gravity="center"
+            android:text="@string/add_provider"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <cn.caimatou.canting.widget.refresh.PullToRefreshLayout
+        android:id="@+id/prlRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head"/>
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <cn.caimatou.canting.widget.refresh.PullableListView
+            android:id="@+id/lvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="#00ffffff"
+            android:scrollbars="none"/>
+
+        <include layout="@layout/load_more"/>
+
+    </cn.caimatou.canting.widget.refresh.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dim_24px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dim_30px">
+        <TextView
+            android:layout_width="@dimen/dim_155px"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_old"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_28px_sp"/>
+        <TextView
+            android:id="@+id/edit_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/phone_old" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="@dimen/dim_155px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_30px"
+            android:layout_marginTop="@dimen/dim_30px"
+            android:layout_marginBottom="@dimen/dim_30px"
+            android:layout_gravity="center_vertical"
+            android:text="@string/phone_code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_28px_sp"/>
+
+        <EditText
+            android:id="@+id/edit_phone_check_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:hint="@string/enter_phone_code"
+            android:textSize="@dimen/dim_24px_sp"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/get_vcode"
+            android:layout_width="@dimen/dim_230px"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim_24px"
+            android:layout_gravity="center_vertical"
+            android:text="@string/get_vcode"
+            android:textSize="@dimen/dim_36px_sp"
+            android:background="@drawable/btn_gray_selector"
+            android:textColor="@color/black1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginTop="@dimen/dim_15px"
+        android:singleLine="true"
+        android:textColor="@color/gray4"
+        android:text="@string/edit_phone_info"/>
+
+    <Button
+        android:id="@+id/edit_phone_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/dim_30px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginRight="@dimen/dim_30px"
+        android:layout_marginStart="@dimen/dim_30px"
+        android:layout_marginTop="@dimen/dim_30px"
+        android:background="@drawable/btn_orange_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dim_28px"
+        android:paddingTop="@dimen/dim_30px"
+        android:text="@string/change_phone_next"
+        android:textColor="@color/white1"
+        android:textSize="@dimen/dim_32px_sp"/>
+
+</LinearLayout>

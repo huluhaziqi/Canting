@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_below="@id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_24px"
+        android:layout_marginBottom="@dimen/dim_24px"
+        android:padding="@dimen/dim_30px"
+        android:orientation="horizontal"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/message_notice"
+            android:textSize="@dimen/dim_28px_sp"
+            android:textColor="@color/gray4" />
+
+        <ToggleButton
+            android:id="@+id/message_btn"
+            android:layout_width="@dimen/dim_80px"
+            android:layout_height="@dimen/dim_40px"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:button="@drawable/btn_ios7_selector"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/check_update"
+        layout="@layout/common_info" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+    <include
+        android:id="@+id/about_us"
+        layout="@layout/common_info" />
+
+</LinearLayout>

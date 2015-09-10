@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llSearchItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white_selector"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSearchProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dim_30px"
+        android:paddingLeft="@dimen/dim_30px"
+        android:paddingRight="@dimen/dim_30px"
+        android:paddingTop="@dimen/dim_30px"
+        android:text="@null"
+        android:textColor="@color/gray1"
+        android:textSize="@dimen/dim_28px_sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3"/>
+
+</LinearLayout>

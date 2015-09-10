@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="tran_bg">#22f6f6f6</color>
+
+    <color name="province_line_border">#C7C7C7</color>
+
+    <color name="black">#000000</color>
+    <!-- 用于重要级文字信息、标题信息，如：导航名称，版块标题，类目名称 -->
+    <color name="black1">#333333</color>
+
+    <color name="white">#ffffff</color>
+    <!-- 用于分割模块的底色 -->
+    <color name="white1">#f8fff9</color>
+
+    <!-- 小面积使用，用于警示类文字、icon 如：状态取消、操作失败 -->
+    <color name="red">#ea5652</color>
+
+    <!-- 小面积使用，用于特别需要突出和强调的文字、icon 如：数量、金额、警告等 -->
+    <color name="oranger">#ff9900</color>
+    <color name="orange1">#FF8800</color>
+
+    <!-- 用于r操作成功，状态、主按钮 -->
+    <color name="green">#39b44a</color>
+    <color name="green1">#22943a</color>
+
+    <!-- 用于链接字体颜色，可点击文字 -->
+    <color name="blue">#288df0</color>
+
+    <color name="gray">#cccccc</color>
+    <!-- 用于辅助、次要的文字信息，如：备注、文本框内提示文字等 -->
+    <color name="gray1">#999999</color>
+    <!-- 用于内容区域底色 -->
+    <color name="gray2">#f5f5f9</color>
+    <!-- 用于分隔线、标签、模块描边 -->
+    <color name="gray3">#e5e5e5</color>
+    <!-- 用于普通级段落信息引导词，如报菜单详情、供应商主营类别 -->
+    <color name="gray4">#666666</color>
+    <color name="gray5">#f2f2f2</color>
+    <color name="gray6">#f6f6f6</color>
+    <color name="gray7">#666666</color>
+    <color name="gray8">#fafafa</color>
+
+    <color name="search_edit_gray">#ffcccccc</color>
+
+</resources>

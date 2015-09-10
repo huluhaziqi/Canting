@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:id="@+id/searchLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_20px">
+
+        <cn.caimatou.canting.widget.SearchEditText
+            android:id="@+id/search"
+            android:layout_alignParentTop="true"
+            style="@style/editTextStyle" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/searchLinear"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <ListView
+        android:layout_below="@id/line"
+        android:id="@+id/activity_tel_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+    <include layout="@layout/index_bar" />
+
+    <include layout="@layout/index_toast" />
+
+</RelativeLayout>

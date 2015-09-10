@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@color/gray2"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llBaocaiItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/dim_30px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginRight="@dimen/dim_30px"
+        android:layout_marginStart="@dimen/dim_30px"
+        android:layout_marginTop="@dimen/dim_30px"
+        android:background="@drawable/gl_white_round_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/dim_30px"
+            android:layout_marginLeft="@dimen/dim_30px"
+            android:layout_marginStart="@dimen/dim_30px"
+            android:layout_marginTop="@dimen/dim_30px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvProviderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@null"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/dim_30px_sp"/>
+
+            <TextView
+                android:id="@+id/tvKinds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_24px"
+                android:singleLine="true"
+                android:text="@null"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/dim_24px_sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dim_24px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dim_24px"
+                    android:layout_height="@dimen/dim_24px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/shop_address"/>
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dim_5dp"
+                    android:layout_marginStart="@dimen/dim_5dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@null"
+                    android:textColor="@color/gray7"
+                    android:textSize="@dimen/dim_24px_sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dim_24px"
+                    android:layout_height="@dimen/dim_24px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/shop_phone"/>
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dim_5dp"
+                    android:layout_marginStart="@dimen/dim_5dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@null"
+                    android:textColor="@color/gray7"
+                    android:textSize="@dimen/dim_24px_sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dim_30px"
+            android:layout_marginLeft="@dimen/dim_15px"
+            android:layout_marginRight="@dimen/dim_30px"
+            android:layout_marginStart="@dimen/dim_15px"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_count_bg">
+                <TextView
+                    android:id="@+id/tvBaocaiCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dim_5dp"
+                    android:paddingRight="@dimen/dim_5dp"
+                    android:singleLine="true"
+                    android:text="@null"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/dim_30px_sp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvBaocaiTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_10px"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@null"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/dim_24px_sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vieBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_30px"
+        android:background="@color/gray2"/>
+</LinearLayout>

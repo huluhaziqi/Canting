@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_30px"
+        android:layout_marginTop="@dimen/dim_24px"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/post_add_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/input_post_name"
+            android:textSize="@dimen/dim_28px_sp"
+            android:textColor="@color/gray1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_below="@id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_30px"
+        android:layout_marginTop="@dimen/dim_24px"
+        android:orientation="horizontal"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/gl_listVege"
+            android:textSize="@dimen/dim_28px_sp"
+            android:textColor="@color/gray4" />
+
+        <ToggleButton
+            android:id="@+id/baocai_post_add_toggle"
+            android:layout_width="@dimen/dim_80px"
+            android:layout_height="@dimen/dim_40px"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:button="@drawable/btn_ios7_selector"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/linear3"
+        android:layout_below="@id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_15px"
+        android:layout_marginBottom="@dimen/dim_30px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:text="@string/baocai_open_info"
+        android:textSize="@dimen/dim_24px_sp"
+        android:textColor="@color/gray1"/>
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_below="@id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_30px"
+        android:orientation="horizontal"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/gl_listVege"
+            android:textSize="@dimen/dim_28px_sp"
+            android:textColor="@color/gray4" />
+
+        <ToggleButton
+            android:id="@+id/view_report_post_add_toggle"
+            android:layout_width="@dimen/dim_80px"
+            android:layout_height="@dimen/dim_40px"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:button="@drawable/btn_ios7_selector"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_15px"
+        android:layout_marginBottom="@dimen/dim_30px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:text="@string/view_report_open_info"
+        android:textSize="@dimen/dim_24px_sp"
+        android:textColor="@color/gray1"/>
+
+    <TextView
+        android:id="@+id/post_add_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_74px"
+        android:layout_marginTop="@dimen/dim_20px"
+        android:layout_marginBottom="@dimen/dim_20px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginRight="@dimen/dim_30px"
+        android:background="@drawable/btn_orange_selector"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="@dimen/dim_32px_sp"
+        android:textColor="@color/white"
+        android:text="@string/save" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_above="@id/post_add_save"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+</RelativeLayout>

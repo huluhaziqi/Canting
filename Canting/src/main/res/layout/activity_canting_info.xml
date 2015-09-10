@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llcantingImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_15px"
+        android:layout_marginTop="@dimen/dim_24px"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dim_15px"
+            android:layout_gravity="center_vertical"
+            android:text="@string/canting_logo"
+            android:textColor="@color/gray4"/>
+
+        <ImageView
+            android:id="@+id/canting_img"
+            android:layout_width="@dimen/dim_100px"
+            android:layout_height="@dimen/dim_75px" />
+
+        <ImageView
+            android:id="@+id/common_img"
+            android:layout_width="@dimen/dim_24px"
+            android:layout_height="@dimen/dim_24px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dim_16px"
+            android:src="@mipmap/next"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <include
+        android:id="@+id/canting_name"
+        layout="@layout/common_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <include
+        android:id="@+id/canting_address"
+        layout="@layout/common_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <include
+        android:id="@+id/canting_brief"
+        layout="@layout/common_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <include
+        android:id="@+id/canting_person"
+        layout="@layout/common_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <include
+        android:id="@+id/canting_gender"
+        layout="@layout/common_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <include
+        android:id="@+id/canting_phone"
+        layout="@layout/common_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/dim_30px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginRight="@dimen/dim_30px"
+        android:layout_marginStart="@dimen/dim_30px"
+        android:layout_marginTop="@dimen/dim_54px"
+        android:background="@drawable/btn_orange_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dim_28px"
+        android:paddingTop="@dimen/dim_28px"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_32px_sp"/>
+
+</LinearLayout>

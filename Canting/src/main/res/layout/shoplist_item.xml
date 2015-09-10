@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dim_30px" >
+
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dim_30px_sp"
+        android:textColor="@color/black1"
+        android:text="名称"/>
+
+    <TextView
+        android:id="@+id/shop_sellcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_below="@id/shop_name"
+        android:layout_marginTop="@dimen/dim_24px"
+        android:textSize="@dimen/dim_24px_sp"
+        android:textColor="@color/gray1"
+        android:text="主营产品"/>
+
+    <RelativeLayout
+        android:id="@+id/shoplist_show"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/shop_sellcontent"
+        android:layout_marginTop="@dimen/dim_24px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/shop_address_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dim_24px"
+                android:layout_height="@dimen/dim_24px"
+                android:src="@mipmap/shop_address" />
+
+            <TextView
+                android:id="@+id/shop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dim_10px"
+                android:textSize="@dimen/dim_24px_sp"
+                android:textColor="@color/gray4"
+                android:text="@string/address"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shop_phone_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/shop_address_linear"
+            android:layout_marginTop="@dimen/dim_16px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dim_24px"
+                android:layout_height="@dimen/dim_24px"
+                android:src="@mipmap/shop_phone" />
+
+            <TextView
+                android:id="@+id/shop_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_10px"
+                android:textSize="@dimen/dim_24px_sp"
+                android:textColor="@color/gray1"
+                android:text="@string/phone"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/to_next"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:src="@mipmap/to_next"
+        android:layout_marginRight="@dimen/dim_28px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/shop_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dim_30px"
+        android:layout_toLeftOf="@id/to_next"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/dim_24px_sp"
+        android:textColor="@color/gray1"
+        android:text="100米" />
+
+    <View
+        android:id="@+id/shoplist_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/shoplist_show"
+        android:layout_marginTop="@dimen/dim_30px"
+        android:background="@color/gray3" />
+
+</RelativeLayout>

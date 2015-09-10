@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray3"/>
+
+        <LinearLayout
+            android:id="@+id/llWheelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical"
+            android:gravity="bottom|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <cn.kankan.wheel.widget.WheelView
+                android:id="@+id/wvProvince"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <cn.kankan.wheel.widget.WheelView
+                android:id="@+id/wvCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <cn.kankan.wheel.widget.WheelView
+                android:id="@+id/wvDistrict"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <cn.caimatou.canting.widget.GLCustomScrollView
+        android:id="@+id/svView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:background="@color/transparent"
+        android:fillViewport="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 地址信息 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dim_30px"
+                android:background="@color/gray3"/>
+            <LinearLayout
+                android:id="@+id/llCantingName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gl_white_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/canting_name"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/dim_28px_sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/dim_30px"
+                    android:layout_marginStart="@dimen/dim_30px"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvCantingName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:maxLines="2"
+                        android:text="@null"
+                        android:textColor="@color/gray1"
+                        android:textSize="@dimen/dim_28px_sp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_24px"
+                        android:layout_height="@dimen/dim_24px"
+                        android:layout_marginLeft="@dimen/dim_12px"
+                        android:layout_marginStart="@dimen/dim_12px"
+                        android:src="@mipmap/icon_next_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray3"/>
+
+            <LinearLayout
+                android:id="@+id/llCantingCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gl_white_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/address"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/dim_28px_sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/dim_30px"
+                    android:layout_marginStart="@dimen/dim_30px"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvCantingCity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/address_city"
+                        android:maxLines="2"
+                        android:text="@null"
+                        android:textColor="@color/gray1"
+                        android:textSize="@dimen/dim_28px_sp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_24px"
+                        android:layout_height="@dimen/dim_24px"
+                        android:layout_marginLeft="@dimen/dim_12px"
+                        android:layout_marginStart="@dimen/dim_12px"
+                        android:src="@mipmap/icon_next_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray3"/>
+
+            <LinearLayout
+                android:id="@+id/llCantingAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gl_white_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/detail_address"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/dim_28px_sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/dim_30px"
+                    android:layout_marginStart="@dimen/dim_30px"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvCantingAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="right|center_vertical"
+                        android:maxLines="2"
+                        android:text="@null"
+                        android:textColor="@color/gray1"
+                        android:textSize="@dimen/dim_28px_sp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_24px"
+                        android:layout_height="@dimen/dim_24px"
+                        android:layout_marginLeft="@dimen/dim_12px"
+                        android:layout_marginStart="@dimen/dim_12px"
+                        android:src="@mipmap/icon_next_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 地址信息END -->
+
+            <!-- 个人信息 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dim_40px"
+                android:background="@color/gray3"/>
+            <LinearLayout
+                android:id="@+id/llCantingContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gl_white_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/contact"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/dim_28px_sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/dim_30px"
+                    android:layout_marginStart="@dimen/dim_30px"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvCantingContact"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:maxLines="2"
+                        android:text="@null"
+                        android:textColor="@color/gray1"
+                        android:textSize="@dimen/dim_28px_sp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_24px"
+                        android:layout_height="@dimen/dim_24px"
+                        android:layout_marginLeft="@dimen/dim_12px"
+                        android:layout_marginStart="@dimen/dim_12px"
+                        android:src="@mipmap/icon_next_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray3"/>
+
+            <LinearLayout
+                android:id="@+id/llCantingPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gl_white_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/contact_mobile_phone"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/dim_28px_sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/dim_30px"
+                    android:layout_marginStart="@dimen/dim_30px"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvCantingPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="right|center_vertical"
+                        android:maxLines="2"
+                        android:text="@null"
+                        android:textColor="@color/gray1"
+                        android:textSize="@dimen/dim_28px_sp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_24px"
+                        android:layout_height="@dimen/dim_24px"
+                        android:layout_marginLeft="@dimen/dim_12px"
+                        android:layout_marginStart="@dimen/dim_12px"
+                        android:src="@mipmap/icon_next_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray3"/>
+
+            <LinearLayout
+                android:id="@+id/llCantingQuarters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gl_white_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/quarters"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/dim_28px_sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/dim_30px"
+                    android:layout_marginStart="@dimen/dim_30px"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvCantingQuarters"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="right|center_vertical"
+                        android:maxLines="2"
+                        android:text="@null"
+                        android:textColor="@color/gray1"
+                        android:textSize="@dimen/dim_28px_sp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_24px"
+                        android:layout_height="@dimen/dim_24px"
+                        android:layout_marginLeft="@dimen/dim_12px"
+                        android:layout_marginStart="@dimen/dim_12px"
+                        android:src="@mipmap/icon_next_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 个人信息END -->
+
+            <Button
+                android:id="@+id/btnCompleter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dim_30px"
+                android:layout_marginLeft="@dimen/dim_30px"
+                android:layout_marginRight="@dimen/dim_30px"
+                android:layout_marginStart="@dimen/dim_30px"
+                android:layout_marginTop="@dimen/dim_30px"
+                android:background="@drawable/btn_green_selector"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dim_28px"
+                android:paddingTop="@dimen/dim_28px"
+                android:text="@string/completer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim_32px_sp"/>
+
+        </LinearLayout>
+
+    </cn.caimatou.canting.widget.GLCustomScrollView>
+
+</RelativeLayout>

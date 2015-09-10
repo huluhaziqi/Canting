@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnSingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_green_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dim_28px"
+        android:paddingTop="@dimen/dim_28px"
+        android:text="@string/single"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_32px_sp"/>
+
+    <cn.caimatou.canting.widget.GLCustomScrollView
+        android:id="@+id/svView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSingle"
+        android:background="@color/transparent"
+        android:fillViewport="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 送达时间 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dim_30px"
+                android:background="@color/gray3"/>
+            <LinearLayout
+                android:id="@+id/llDeliveryTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gl_white_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivery_time"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/dim_28px_sp"/>
+
+                    <TextView
+                        android:id="@+id/tvDeliveryTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_15px"
+                        android:text="@null"
+                        android:textColor="@color/gray1"
+                        android:textSize="@dimen/dim_24px_sp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/dim_24px"
+                    android:layout_height="@dimen/dim_24px"
+                    android:layout_marginLeft="@dimen/dim_12px"
+                    android:layout_marginStart="@dimen/dim_12px"
+                    android:src="@mipmap/icon_next_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray3"/>
+
+            <LinearLayout
+                android:id="@+id/llDeliveryAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gl_white_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivery_address"
+                        android:textColor="@color/gray4"
+                        android:textSize="@dimen/dim_28px_sp"/>
+
+                    <TextView
+                        android:id="@+id/tvDeliveryAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_15px"
+                        android:text="@null"
+                        android:textColor="@color/gray1"
+                        android:textSize="@dimen/dim_24px_sp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/dim_24px"
+                    android:layout_height="@dimen/dim_24px"
+                    android:layout_marginLeft="@dimen/dim_12px"
+                    android:layout_marginStart="@dimen/dim_12px"
+                    android:src="@mipmap/icon_next_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gl_white_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:text="@string/note"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/dim_28px_sp"/>
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_155px"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="@dimen/dim_24px"
+                    android:layout_marginStart="@dimen/dim_24px"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:imeOptions="actionDone"
+                    android:scrollbars="none"
+                    android:text="@null"
+                    android:textColor="@color/gray1"
+                    android:textSize="@dimen/dim_28px_sp"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_30px"
+                android:layout_marginStart="@dimen/dim_30px"
+                android:layout_marginTop="@dimen/dim_48px"
+                android:text="@string/has_add_caipin"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/dim_24px_sp"/>
+
+            <cn.caimatou.canting.widget.GLNoScrollListView
+                android:id="@+id/lvList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dim_24px"
+                android:background="@color/white"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:listSelector="#00ffffff"
+                android:scrollbars="none"/>
+        </LinearLayout>
+
+    </cn.caimatou.canting.widget.GLCustomScrollView>
+
+</RelativeLayout>

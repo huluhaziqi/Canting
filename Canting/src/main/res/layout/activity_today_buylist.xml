@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/today_buy_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/gl_white_round_selector"-->
+        <!--android:layout_margin="@dimen/dim_30px"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llEmpty"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:visibility="gone">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/today_buy"-->
+                <!--android:textColor="@color/gray1"-->
+                <!--android:textSize="@dimen/dim_28px_sp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<cn.caimatou.canting.widget.refresh.PullToRefreshLayout-->
+            <!--android:id="@+id/todayButListRefresh"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" >-->
+
+            <!--<include layout="@layout/refresh_head" />-->
+            <!--&lt;!&ndash; 支持所有实现Pullable接口的View &ndash;&gt;-->
+
+            <!--<cn.caimatou.canting.widget.refresh.PullableListView-->
+                <!--android:id="@+id/todayBuyList"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:divider="@null"-->
+                <!--android:dividerHeight="0dp"-->
+                <!--android:listSelector="@null" />-->
+
+            <!--<include layout="@layout/load_more" />-->
+
+        <!--</cn.caimatou.canting.widget.refresh.PullToRefreshLayout>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

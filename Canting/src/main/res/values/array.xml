@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="polyPhoneChinese">
+        <item>给</item>
+        <item>藏</item>
+        <item>弹</item>
+        <item>吓</item>
+        <item>重</item>
+    </string-array>
+    <string-array name="polyPhoneCharacters">
+        <item>gei</item>
+        <item>cang</item>
+        <item>tan</item>
+        <item>xia</item>
+        <item>chong</item>
+    </string-array>
+</resources>

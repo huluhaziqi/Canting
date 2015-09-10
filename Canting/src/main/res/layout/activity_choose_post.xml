@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/choose_post_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_74px"
+        android:layout_marginTop="@dimen/dim_20px"
+        android:layout_marginBottom="@dimen/dim_20px"
+        android:layout_marginLeft="@dimen/dim_30px"
+        android:layout_marginRight="@dimen/dim_30px"
+        android:background="@drawable/btn_orange_selector"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="@dimen/dim_32px_sp"
+        android:textColor="@color/white"
+        android:text="@string/confirm1" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_above="@id/choose_post_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+
+    <ExpandableListView
+        android:layout_above="@id/line"
+        android:id="@+id/choose_post_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+    </ExpandableListView>
+
+</RelativeLayout>

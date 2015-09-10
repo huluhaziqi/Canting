@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnManagerAddress"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dim_24px"
+        android:background="@color/gray2"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="#00ffffff"
+        android:scrollbars="none"/>
+
+    <Button
+        android:id="@+id/btnManagerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_green_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dim_28px"
+        android:paddingTop="@dimen/dim_28px"
+        android:text="@string/manager_address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_32px_sp"/>
+</RelativeLayout>

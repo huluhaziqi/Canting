@@ -1,0 +1,91 @@
+<resources>
+    <dimen name="dim_1px">1px</dimen>
+    <dimen name="dim_5dp">5dp</dimen>
+    <dimen name="dim_58dp">58dp</dimen>
+
+    <!-- 5px -->
+    <dimen name="dim_5px">2.81dp</dimen>
+    <!-- 12px -->
+    <dimen name="dim_12px">6.75dp</dimen>
+    <!-- 10px -->
+    <dimen name="dim_10px">5.63dp</dimen>
+    <!-- 15px -->
+    <dimen name="dim_15px">8.44dp</dimen>
+    <!-- 16px -->
+    <dimen name="dim_16px">9dp</dimen>
+    <!-- 20px -->
+    <dimen name="dim_20px">11.25dp</dimen>
+    <!-- 22px -->
+    <dimen name="dim_22px">12.38dp</dimen>
+    <!-- 24px -->
+    <dimen name="dim_24px">13.5dp</dimen>
+    <!-- 26px -->
+    <dimen name="dim_26px">14.6dp</dimen>
+    <!-- 28px -->
+    <dimen name="dim_28px">15.75dp</dimen>
+    <!-- 30px -->
+    <dimen name="dim_30px">16.88dp</dimen>
+    <!-- 32px -->
+    <dimen name="dim_32px">18dp</dimen>
+    <!-- 36px -->
+    <dimen name="dim_36px">20.25dp</dimen>
+    <!-- 40px -->
+    <dimen name="dim_40px">22.5dp</dimen>
+    <!-- 42px -->
+    <dimen name="dim_42px">23.63dp</dimen>
+    <!-- 48px -->
+    <dimen name="dim_48px">27dp</dimen>
+    <!-- 54px -->
+    <dimen name="dim_54px">30.38dp</dimen>
+    <!-- 64px -->
+    <dimen name="dim_64px">36dp</dimen>
+    <!-- 70px -->
+    <dimen name="dim_70px">39.38dp</dimen>
+    <!-- 74px -->
+    <dimen name="dim_74px">41.63dp</dimen>
+    <!-- 75px -->
+    <dimen name="dim_75px">42.19dp</dimen>
+    <!-- 80px -->
+    <dimen name="dim_80px">45dp</dimen>
+    <!-- 82px -->
+    <dimen name="dim_82px">46.13dp</dimen>
+    <!-- 87px -->
+    <dimen name="dim_87px">48.94dp</dimen>
+    <!-- 88px -->
+    <dimen name="dim_88px">49.5dp</dimen>
+    <!-- 100px -->
+    <dimen name="dim_100px">56.25dp</dimen>
+    <!-- 155px -->
+    <dimen name="dim_155px">87.19dp</dimen>
+    <!-- 114px -->
+    <dimen name="dim_114px">64.125dp</dimen>
+    <!-- 230px -->
+    <dimen name="dim_230px">129.38dp</dimen>
+    <!-- 250px -->
+    <dimen name="dim_250px">140.63dp</dimen>
+
+
+    <!-- 字体sp -->
+
+    <!-- 22px -->
+    <dimen name="dim_22px_sp">12.38sp</dimen>
+    <!-- 24px -->
+    <dimen name="dim_24px_sp">13.5sp</dimen>
+    <!-- 26px -->
+    <dimen name="dim_26px_sp">14.6sp</dimen>
+    <!-- 28px -->
+    <dimen name="dim_28px_sp">15.75sp</dimen>
+    <!-- 30px -->
+    <dimen name="dim_30px_sp">16.88sp</dimen>
+    <!-- 32px -->
+    <dimen name="dim_32px_sp">18sp</dimen>
+    <!-- 36px -->
+    <dimen name="dim_36px_sp">20.25sp</dimen>
+    <!-- 40px -->
+    <dimen name="dim_40px_sp">22.5sp</dimen>
+    <!-- 42px -->
+    <dimen name="dim_42px_sp">23.63sp</dimen>
+    <!-- 54px -->
+    <dimen name="dim_54px_sp">30.38sp</dimen>
+
+</resources>

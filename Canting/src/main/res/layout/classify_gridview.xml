@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.caimatou.canting.widget.LineGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/classify_gridview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray2"
+    android:numColumns="3"
+    android:listSelector="@color/white1"
+    android:gravity="center" >
+</cn.caimatou.canting.widget.LineGridView>

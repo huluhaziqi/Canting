@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@color/gray2"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_24px"
+        android:layout_marginRight="@dimen/dim_24px"
+        android:layout_marginTop="@dimen/dim_30px"
+        android:background="@drawable/gl_white_round_selector"
+        android:paddingBottom="@dimen/dim_24px"
+        android:paddingLeft="@dimen/dim_30px"
+        android:paddingRight="@dimen/dim_30px"
+        android:paddingTop="@dimen/dim_30px">
+
+        <TextView
+            android:id="@+id/my_provider_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="供应商名称"
+            android:textColor="@color/black1"
+            android:textSize="@dimen/dim_30px_sp" />
+
+        <TableLayout
+            android:id="@+id/llMainSellContext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_provider_name"
+            android:layout_marginTop="@dimen/dim_24px">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/main_sell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="主营：蔬菜、生鲜"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/dim_24px_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dim_10px"
+                    android:paddingRight="@dimen/dim_10px"
+                    android:text="|"
+                    android:textColor="#F5F5F9"
+                    android:textSize="@dimen/dim_24px_sp" />
+
+                <TextView
+                    android:id="@+id/month_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="本月报菜单数："
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/dim_24px_sp" />
+
+                <TextView
+                    android:id="@+id/month_bill_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#FF9900"
+                    android:textSize="@dimen/dim_24px_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_provider_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llMainSellContext"
+            android:layout_marginTop="@dimen/dim_24px">
+
+            <ImageView
+                android:id="@+id/my_provider_address_icon"
+                android:layout_width="@dimen/dim_24px"
+                android:layout_height="@dimen/dim_24px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/shop_address" />
+
+            <TextView
+                android:id="@+id/my_provider_address_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/my_provider_address_icon"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="XXXXXX"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/dim_24px_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_provider_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_provider_address"
+            android:layout_marginTop="@dimen/dim_10px">
+
+            <ImageView
+                android:id="@+id/my_provider_phone_icon"
+                android:layout_width="@dimen/dim_24px"
+                android:layout_height="@dimen/dim_24px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/shop_phone" />
+
+            <TextView
+                android:id="@+id/my_provider_phone_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/my_provider_phone_icon"
+                android:paddingLeft="@dimen/dim_10px"
+                android:text="XXXXXX"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/dim_24px_sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

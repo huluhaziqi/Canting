@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray3"/>
+
+        <LinearLayout
+            android:id="@+id/llSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical"
+            android:gravity="bottom|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSetDefault"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gray_selector"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dim_28px"
+                android:paddingTop="@dimen/dim_28px"
+                android:text="@string/set_default"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/dim_32px_sp"/>
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bg_green_selector"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dim_28px"
+                android:paddingTop="@dimen/dim_28px"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim_32px_sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llWheelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical"
+            android:gravity="bottom|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <cn.kankan.wheel.widget.WheelView
+                android:id="@+id/wvProvince"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <cn.kankan.wheel.widget.WheelView
+                android:id="@+id/wvCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <cn.kankan.wheel.widget.WheelView
+                android:id="@+id/wvDistrict"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <cn.caimatou.canting.widget.GLCustomScrollView
+        android:id="@+id/svView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:background="@color/transparent"
+        android:fillViewport="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dim_30px"
+                android:background="@color/gray3"/>
+            <LinearLayout
+                android:id="@+id/llCityAndArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gl_white_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px">
+
+                <TextView
+                    android:id="@+id/tvCityAndArea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/city_and_area"
+                    android:text="@null"
+                    android:textColor="@color/gray4"
+                    android:textColorHint="@color/gray1"
+                    android:textSize="@dimen/dim_28px_sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/dim_24px"
+                    android:layout_height="@dimen/dim_24px"
+                    android:layout_marginLeft="@dimen/dim_12px"
+                    android:layout_marginStart="@dimen/dim_12px"
+                    android:src="@mipmap/icon_next_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray3"/>
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/detail_address"
+                android:imeOptions="actionNext"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px"
+                android:textColor="@color/gray4"
+                android:textColorHint="@color/gray1"
+                android:textSize="@dimen/dim_28px_sp"
+                android:textStyle="normal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray3"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/etCantinName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/canting_name"
+                android:imeOptions="actionNext"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px"
+                android:textColor="@color/gray4"
+                android:textColorHint="@color/gray1"
+                android:textSize="@dimen/dim_28px_sp"
+                android:textStyle="normal"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray3"/>
+
+            <EditText
+                android:id="@+id/etLinkMan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/contact"
+                android:imeOptions="actionNext"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px"
+                android:singleLine="true"
+                android:textColor="@color/gray4"
+                android:textColorHint="@color/gray1"
+                android:textSize="@dimen/dim_28px_sp"
+                android:textStyle="normal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray3"/>
+
+            <EditText
+                android:id="@+id/etMobilePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:digits="1234567890"
+                android:hint="@string/contact_mobile_phone"
+                android:imeOptions="actionDone"
+                android:inputType="phone|number"
+                android:maxLength="11"
+                android:paddingBottom="@dimen/dim_30px"
+                android:paddingLeft="@dimen/dim_30px"
+                android:paddingRight="@dimen/dim_30px"
+                android:paddingTop="@dimen/dim_30px"
+                android:singleLine="true"
+                android:textColor="@color/gray4"
+                android:textColorHint="@color/gray1"
+                android:textSize="@dimen/dim_28px_sp"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+    </cn.caimatou.canting.widget.GLCustomScrollView>
+
+</RelativeLayout>

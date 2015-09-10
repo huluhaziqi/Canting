@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="provider_main_types">
+        <item>全部</item>
+        <item>生鲜</item>
+        <item>蔬菜</item>
+        <item>生鲜</item>
+        <item>干货</item>
+        <item>速冻食品</item>
+        <item>生擒</item>
+
+    </string-array>
+    
+</resources>
